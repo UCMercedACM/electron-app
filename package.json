@@ -1,0 +1,22 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "https://github.com/UCMercedACM/electron-app.git",
+  "author": "Adrian Darian <adarian@ucmerced.edu>",
+  "scripts": {
+    "start": "electron ."
+  },
+  "description": "A minimal Electron application",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.0.7"
+  }
+}
