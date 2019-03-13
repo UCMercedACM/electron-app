@@ -1,5 +1,5 @@
 {
-  "name": "electron-app",
+  "name": "electron-todo",
   "version": "1.0.0",
   "main": "main.js",
   "repository": "https://github.com/UCMercedACM/electron-app.git",
@@ -7,7 +7,7 @@
   "scripts": {
     "start": "electron ."
   },
-  "description": "A minimal Electron application",
+  "description": "A simple educational todo app",
   "keywords": [
     "Electron",
     "quick",
@@ -17,6 +17,13 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "electron": "^4.0.7"
+    "devtron": "^1.4.0",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "electron": "^3.0.4",
+    "electron-reload": "^1.2.5",
+    "electron-store": "^2.0.0",
+    "spectre.css": "^0.5.3"
   }
 }
