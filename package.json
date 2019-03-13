@@ -1,22 +1,35 @@
 {
-  "name": "electron-app",
+  "name": "electron-soundcloud-player",
   "version": "1.0.0",
-  "main": "main.js",
-  "repository": "https://github.com/UCMercedACM/electron-app.git",
-  "author": "Adrian Darian <adarian@ucmerced.edu>",
-  "scripts": {
-    "start": "electron ."
-  },
-  "description": "A minimal Electron application",
+  "description": "Plays music from SoundCloud",
   "keywords": [
     "Electron",
+    "demo",
     "quick",
     "start",
-    "tutorial",
-    "demo"
+    "tutorial"
   ],
+  "repository": "https://github.com/UCMercedACM/electron-app.git",
   "license": "MIT",
+  "author": "Adrian Darian <adarian@ucmerced.edu>",
+  "main": "main.js",
+  "scripts": {
+    "compile": "browserify -t [ babelify --presets [ react es2015 ] ] src/app.js -o js/app.js",
+    "start": "electron main.js"
+  },
+  "dependencies": {
+    "node-soundcloud": "0.0.5",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "react-loading": "0.0.9",
+    "react-soundplayer": "^0.3.6"
+  },
   "devDependencies": {
-    "electron": "^4.0.7"
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "electron": "^4.0.7",
+    "electron-prebuilt": "^1.2.0"
   }
 }
