@@ -1,22 +1,28 @@
 {
   "name": "electron-app",
   "version": "1.0.0",
-  "main": "main.js",
-  "repository": "https://github.com/UCMercedACM/electron-app.git",
-  "author": "Adrian Darian <adarian@ucmerced.edu>",
-  "scripts": {
-    "start": "electron ."
-  },
   "description": "A minimal Electron application",
   "keywords": [
     "Electron",
+    "demo",
     "quick",
     "start",
-    "tutorial",
-    "demo"
+    "tutorial"
   ],
+  "repository": "https://github.com/UCMercedACM/electron-app.git",
   "license": "MIT",
+  "author": "Adrian Darian <adarian@ucmerced.edu>",
+  "main": "main.js",
+  "scripts": {
+    "package": "electron-packager ./ SoundMachine --all --out ~/Desktop/SoundMachine --version 0.30.2 --overwrite --icon=./app/img/app-icon.icns",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "nconf": "^0.7.2"
+  },
   "devDependencies": {
-    "electron": "^4.0.7"
+    "electron": "^4.0.7",
+    "electron-packager": "^5.0.1",
+    "electron-prebuilt": "^0.30.3"
   }
 }
