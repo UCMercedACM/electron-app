@@ -4,7 +4,7 @@ import ProgressSoundPlayer from './components/ProgressSoundPlayer';
 import SC from 'node-soundcloud';
 import Loading from 'react-loading';
 
-var client_id = process.env.clientId;
+const client_id = process.env.CLIENT_ID;
 
 SC.init({
   id: client_id
